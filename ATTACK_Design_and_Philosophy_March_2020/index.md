@@ -48,7 +48,7 @@
 
 |Technology Domain		|Platform(s) defined|
 |:----------------------|:---------------|
-|Enterprise				|Linux, macOS, Windows, AWS,Azure, GCP, SaaS, Office 365, Azure AD|ي
+|Enterprise				|Linux, macOS, Windows, AWS,Azure, GCP, SaaS, Office 365, Azure AD|
 |Mobile					|Android, iOS														|
 
 ## 3.3 Tactics
@@ -177,11 +177,11 @@
 Shows Relationships between different models
 
 <div style="text-align:center">
-	<img src="file:///home/kourosh/mitre/attack/images/image1.png" />
+	<img src="./images/image1.png" />
 </div>
 <br>
 <div style="text-align:center">
-	<img src="file:///home/kourosh/mitre/attack/images/image2.png" />
+	<img src="./images/image2.png" />
 </div>
 
 
@@ -263,7 +263,7 @@ The ATT&CK info are coming from different sources
 + A mid-level abtraction like ATT&CK helps to tie `high-level` concepts like **Control, Execute, Maintain** and `low-level` concepts like tools and exploits together and understand their area and usage to achive a specific goal and tactic.
 
 <div style="text-align:center">
-	<img src="file:///home/kourosh/mitre/attack/images/image3.png" />
+	<img src="./images/image3.png" />
 </div>
 
 **ATT&CK abstraction provides**
