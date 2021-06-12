@@ -1,0 +1,95 @@
+{
+  "main": {
+    "id": "8d0df751fcac108f",
+    "type": "split",
+    "children": [
+      {
+        "id": "99a5b981b7510b87",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "ATTACK_Design_and_Philosophy_March_2020/index.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "37e7ed732a1a275c",
+    "type": "split",
+    "children": [
+      {
+        "id": "9509cd56b4c1de2b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b36ea9b31a512e97",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "a7d086b133107c59",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "79c076228857c30d",
+    "type": "split",
+    "children": [
+      {
+        "id": "509990c7886a896f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "20e6a1f4399c369d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "ATTACK_Design_and_Philosophy_March_2020/index.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "99a5b981b7510b87",
+  "lastOpenFiles": [
+    "ATTACK_Design_and_Philosophy_March_2020/index.md",
+    "google.com.md",
+    "README.md"
+  ]
+}

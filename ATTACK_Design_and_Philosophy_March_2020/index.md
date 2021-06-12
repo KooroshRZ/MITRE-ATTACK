@@ -343,3 +343,64 @@ There are several factors for Techniques Distinction
 ### 4.3.2 Creating New Techniques
 
 ### 4.3.3 Enhancing Existing Techniques
+
+### 4.3.4 Named Adversary Groups Using Techniques
+
+### 4.3.5 Incorporation Threat Intelligence on Groups and Software within ATT&CK
+#### 4.3.5.1 Ungrouped Use of Techniques
+
+### 4.3.6 Examples of Applying the Methodology for New Techniques
++ Demostrates two seperate techniques (process injection and SQL injection)
++ Prcoess Injection 
+	+ used to execute code in address space of another process to hide activity from some defensive machanisms.It can be dome in form of DLL injection for example.
+	+ applied for Linux and Windows for both legal and illegal purpose
+	+ real time telemetry from system on running process (runtime patching maybe)
+	+ Mitigation is hard due to useful aspects in softwares
+	+ Many adversaries use this technique
+	+ Several methods and variations
+	+ Some load DLL from disk and some use reflective injection which loads from memory
+	+ Similar concepts are in Linux
+
++ SQL Injection
+	+ It's about injecting SQL qurty into insucure applications (mostly web) and run arbitrary SQL queries
+	+ several types (inboud and outband and out of band) 
+	+ union based, error-based, blind(time-based or boolean-based)
+	+ Attacks can be found in firewall's logs
+
+
+
+## 4.4 Applying the ATT&CK Methodology
+
++ ATT&CK focuses on adversaries methodologies and offensive techniques to better understand how to defend
++ Not always all Techniques usage applies to ATT&CK model
+	+ one example could be in wil use techniques that are not reported and documented
+	+ These are called misinformation ones
+	+ One example framework for this one is AMITT by Credibility Coalition
+
+
+# 5 Summary
+This paper discussed the motivation behind the creation of ATT&CK, the components described
+within it, its design philosophy, how the project has progressed, and how it can be used. It is
+meant to be used as an authoritative source of information about ATT&CK, as well as to help
+guide how ATT&CK is maintained and how the methodology behind ATT&CK can be used to
+create knowledge bases for new domains.
+
+Adoption of ATT&CK is widespread across multiple disciplines, including intrusion detection,
+threat hunting, security engineering, threat intelligence, red teaming, and risk management. It is
+important for MITRE to strive for transparency about how ATT&CK was created and the
+decision process that is used to maintain it, as more organizations use ATT&CK. We want users
+of ATT&CK to have confidence in the information and resources that it can provide and better
+understand how they can begin to use it—and also how and where they can help ATT&CK
+grow.
+
+The types of information that went into ATT&CK, and the process used to create and maintain it,
+may also be useful for other work to derive similar models for other technology domains or for
+taxonomies of adversarial behavior in other areas. ATT&CK’s grounding with empirically
+driven threat information and its driving use cases for adversary emulation and better
+measurement of defensive coverage were foundational in how it was perceived and used across
+the security community. We hope this document can be a useful resource for efforts seeking to
+follow the process used to apply the ATT&CK methodology, whether it’s to help us expand and
+maintain MITRE ATT&CK knowledge bases or to model adversary behavior in new areas that
+aren’t directly related to the domains covered by ATT&CK.
+
+[google](https://google.com)
