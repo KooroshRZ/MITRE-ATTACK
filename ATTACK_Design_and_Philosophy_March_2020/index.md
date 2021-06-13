@@ -403,4 +403,4 @@ follow the process used to apply the ATT&CK methodology, whether it’s to help 
 maintain MITRE ATT&CK knowledge bases or to model adversary behavior in new areas that
 aren’t directly related to the domains covered by ATT&CK.
 
-[google](https://google.com)
+[Reference](https://attack.mitre.org/docs/ATTACK_Design_and_Philosophy_March_2020.pdf)
