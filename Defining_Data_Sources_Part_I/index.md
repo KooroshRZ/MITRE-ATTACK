@@ -45,3 +45,47 @@
 </div>
 
 ## Address Redundancy and Overlapping
++ Another unintended consequence of not having a standard naming structure for data sources is redundancy, which can also lead to overlaps.
+
+# Examples
+## example A: Loaded DLLs and DLL monitoring
+
+Loaded DDL and DLL Monitoring. Are they same or different. They may have overlaps
+
+<div style="text-align:center">
+	<img src="./images/example-dll-1.png" />
+</div>
+
+<div style="text-align:center">
+	<img src="./images/example-dll-2.png" />
+</div>
+
+
+## exmple B: Collecting process telemetry
++ Process Monitoring 
++ Process Command-Line Parameters
++ Process Use of Network
+
+Can `Process Command-Line Parameters` be inside `Process Monitoring`. They have overlaps as well.
+
+<div style="text-align:center">
+	<img src="./images/example-process.png" />
+</div>
+
+
+## Example C: Breaking down or aggregating Windows Event Logs
+
+Data Sources such as `Windows Event Logs|` have wide variaty of scope and cover other data sources as well
+
+<div style="text-align:center">
+	<img src="./images/example-eventlog.png" />
+</div>
+
+
++ ATT&CK recommends collecting events from data sources such as PowerShell Logs, Windows Event Reporting, WMI objects, and Windows Registry.
++ However, these could be already covered by `Windows Event Logs` as previously shown.
++ Do we group every Windows data source under `Windows Event Logs` or keep them all as independent data sources?
+
+<div style="text-align:center">
+	<img src="./images/example-eventlog-coverage.png" />
+</div>
