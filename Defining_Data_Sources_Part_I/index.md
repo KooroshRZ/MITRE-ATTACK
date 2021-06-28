@@ -89,3 +89,98 @@ Data Sources such as `Windows Event Logs|` have wide variaty of scope and cover 
 <div style="text-align:center">
 	<img src="./images/example-eventlog-coverage.png" />
 </div>
+
+# Ensure Platform Consistency
++ Ensure platforms 
++ Sub-Techniques
++ [example1](https://attack.mitre.org/techniques/T1003/)) , [example2](_https://attack.mitre.org/techniques/T1003/001/)
+
+<div style="text-align:center">
+	<img src="./images/WindowsDataSources.jpeg" />
+</div>
+
+
+# A Proposed Methodology to Update ATT&CK’s Data Sources
++ Need a methodology to describe data sources
++ 6 ideas to upgrade ATT&CK Data Sources
+
+## 1. Leverage Data Modeling
++ Need to define a data model for data sources
++ ‌‌Better understanding and relations with other components
++ Here is an initial proposed data model for ATT&CK data sources
+
+<div style="text-align:center">
+	<img src="./images/DataModelConcept.png" />
+</div>
+
++ After defining Data Models for Data Sources we can specify relationships between sensors, logs and ...
+
+<div style="text-align:center">
+	<img src="./images/RelationshipExample.jpeg" />
+</div>
+
+
+## 2. Define Data Sources Through Data Elements
+
++ Define elements for data sources
++ For example `Windows Registry` includes `user`, `process` and `registry key`
+
+<div style="text-align:center">
+	<img src="./images/RegKetDataEle.jpeg" />
+</div>
+
++ Another example is for network traffic Data sources elements to be collected
+
+<div style="text-align:center">
+	<img src="./images/NetFlowDataEle.jpeg" />
+</div>
+
+
+## 3. Incorporate Data Modeling and Adversary Modeling
+
++ Relationship between Data sources and data elements and actions
++ It helps for better understanding the relationships between elements
+
+<div style="text-align:center">
+	<img src="./images/relate1.jpeg" />
+</div>
+
+
+## 4. Integrate Data Sources into ATT&CK as Objects
+
++ Date Sources need to be included in Tactics, Techniques and Groups diagram
++ While data sources have always been a property/field object of a technique, it’s time to convert them into objects, with their own corresponding properties.
+
+<div style="text-align:center">
+	<img src="./images/object-relate.jpeg" />
+</div>
+
+## 5. Expand the ATT&CK Data Source Object
++ Once data sources are integrated as objects in the ATT&CK framework, and we establish a structured way to define data sources, we can start identifying additional information or metadata in the form of properties
++ The table below outlines some initial properties we propose starting off with
+
+<div style="text-align:center">
+	<img src="./images/DataModelingConcepts.png" />
+</div>
+
+
+## 6. Extend Data Sources with Data Components
++ Our final proposal is to define data components.
++ The relationships between the data elements related to the data sources (e.g., Process, IP, File, Registry) can be grouped together and provide an additional sub-layer of context to data sources.
++ This concept was developed as part of the [Open Source Security Event Metadata (OSSEM)](https://github.com/OTRF/OSSEM) project and presented at ATT&CKcon 2018 and 2019.
++ We refer to this concept as **Data Components**.
+
+<div style="text-align:center">
+	<img src="./images/DataComponents-Relationships.jpeg" />
+</div>
+
+Diagram shows how we can extend the Data Components based on our logs and needs
+
+<div style="text-align:center">
+	<img src="./images/ExtendedDataComponents.jpeg" />
+</div>
+
+# What’s Next
+
+In the second post of this two-part series, we’ll explore a methodology to help define new ATT&CK data source objects and how to implement the methodology with current data sources.
+
