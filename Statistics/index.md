@@ -1,4 +1,4 @@
-# Top most ATT&CK Techniqes used in wild
+# Top most ATT&CK Techniques used in wild
 
 ## List
 
