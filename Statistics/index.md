@@ -41,7 +41,10 @@
 
 
 [Reference](https://redcanary.com/threat-detection-report/techniques/)
-![[./images/Pasted image 20210726175152.png]]
+
+<div style="text-align:center">
+	<img src="./images/Pasted image 20210726175152.png" />
+</div>
 
 
 
@@ -52,4 +55,6 @@
 
 https://github.com/olafhartong/sysmon-modular/
 
-![[./images/sysmon-modular.png]]
+<div style="text-align:center">
+	<img src="./images/sysmon-modular.png" />
+</div>
