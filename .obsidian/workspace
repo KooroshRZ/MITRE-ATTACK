@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Defining_Data_Sources_Part_I/index.md",
+            "file": "Implementation/index.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Defining_Data_Sources_Part_I/index.md",
+                "file": "Implementation/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,6 +88,9 @@
   },
   "active": "99a5b981b7510b87",
   "lastOpenFiles": [
+    "Implementation/index.md",
+    "Atomic-Red-Team/index.md",
+    "Atomic-Red-Team/Untitled.md",
     "Defining_Data_Sources_Part_I/index.md",
     "ATTACK_Design_and_Philosophy_March_2020/index.md",
     "google.com.md",
