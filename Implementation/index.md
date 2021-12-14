@@ -21,6 +21,7 @@
 
 ## splunk mitre searches
 ### Techniques
+
 |number|Rule Name|MITRE Techqniue|
 |:-----|:----------|:--------|
 |1 |Execution with AT|[T1053.002](https://attack.mitre.org/techniques/T1053/002/)|
