@@ -1,20 +1,21 @@
-# Research 
-## Splunk
-+ https://splunkbase.splunk.com/app/4617/
-+ https://www.splunk.com/en_us/blog/security/splunk-security-essentials-3-1-with-enhanced-mitre-att-ck-matrix-find-the-content-that-masters-most-to-you-faster.html
-+ https://medium.com/seynur/detecting-cyber-threats-with-mitre-att-ck-app-for-splunk-a6627439a9e3
-+ https://medium.com/seynur/detecting-cyber-threats-with-mitre-att-ck-app-for-splunk-part-2-c07c68ce1b03
-+ https://github.com/seynur/DA-ESS-MitreContent
-+ https://seynur.github.io/DA-ESS-MitreContent/versions/1x/
-+ https://www.youtube.com/watch?v=Y6jiFsa7vT0
+# Implementation 
+## Research
+### Splunk
++ [Splunk MITRE App](https://splunkbase.splunk.com/app/4617/)
++ [Find the contetnt that masters most](https://www.splunk.com/en_us/blog/security/splunk-security-essentials-3-1-with-enhanced-mitre-att-ck-matrix-find-the-content-that-masters-most-to-you-faster.html)
++ [detecting cyber threats with MITRE ATT&CK app for splunk : part 1](https://medium.com/seynur/detecting-cyber-threats-with-mitre-att-ck-app-for-splunk-a6627439a9e3)
++ [detecting cyber threats with MITRE ATT&CK app for splunk : part 2](https://medium.com/seynur/detecting-cyber-threats-with-mitre-att-ck-app-for-splunk-part-2-c07c68ce1b03)
++ [DA-ESS-MitreContent](https://github.com/seynur/DA-ESS-MitreContent)
++ [DA-ESS-MitreContent](https://seynur.github.io/DA-ESS-MitreContent/versions/1x/)
++ [youtube](https://www.youtube.com/watch?v=Y6jiFsa7vT0)
 
-## Logstash and ElasticSearch
-+ https://www.elastic.co/pdf/how-to-use-mitre-attack
-+ https://www.elastic.co/blog/visualizing-mitre-round-2-evaluation-results-Kibana
-+ https://www.elastic.co/blog/signals-in-elastic-siem-sysmon-data
-+ https://www.elastic.co/blog/mitre-engenuity-attck-round-3-carbanak-fin7-vs-free-open-elastic-security
-+ https://github.com/ElasticSA/elsec_dr2an
-+ https://medium.com/security-assessment-using-elastic-security-siem/introduction-db745c172cf9
+### Logstash and ElasticSearch
++ [How to use mitre attack](https://www.elastic.co/pdf/how-to-use-mitre-attack)
++ [Visualizing MITRE round 2 evaluation results Kibana](https://www.elastic.co/blog/visualizing-mitre-round-2-evaluation-results-Kibana)
++ [signals in elastic siem sysmon data](https://www.elastic.co/blog/signals-in-elastic-siem-sysmon-data)
++ [MITRE engenuity attck round 3 carbanak fin7 vs free open elastic security](https://www.elastic.co/blog/mitre-engenuity-attck-round-3-carbanak-fin7-vs-free-open-elastic-security)
++ [elsec_dr2an](https://github.com/ElasticSA/elsec_dr2an)
++ [Security assessment using elastic security siem](https://medium.com/security-assessment-using-elastic-security-siem/introduction-db745c172cf9)
 
 
 
@@ -23,7 +24,7 @@
 ### Techniques
 
 |number|Rule Name|MITRE Techqniue|
-|:-----|:----------|:--------|
+|:-|:--------|:--------|
 |1 |Execution with AT|[T1053.002](https://attack.mitre.org/techniques/T1053/002/)|
 |2 |Running executables with same hash and different names|[T1036.003](https://attack.mitre.org/techniques/T1036/003/)|
 |3 |Active Directory Dumping via NTDSUtil|[T1003.003](https://attack.mitre.org/techniques/T1003/003/)|
@@ -90,5 +91,73 @@
 |64|Rare LolBAS Command Lines|[T1012](https://attack.mitre.org/techniques/T1012/), [T1112](https://attack.mitre.org/techniques/T1112/), [T1547](https://attack.mitre.org/techniques/T1547/), [T1574](https://attack.mitre.org/techniques/T1574/)|
 |65|Unusually Long Command Line Strings|[T1059.003](https://attack.mitre.org/techniques/T1059/003/), [T1059.001](https://attack.mitre.org/techniques/T1059/001/)|
 
+
+
+# Map to Local
+
+Implementing rules based on [Techniques usage statistics](https://kooroshrz.github.io/MITRE-ATTACK/Statistics/)
+
+## Command and Scripting Interpreter
++ [T1059](https://attack.mitre.org/techniques/T1059/)
++ [T1059.001](https://attack.mitre.org/techniques/T1059/001/)
++ [T1059.003](https://attack.mitre.org/techniques/T1059/003/)
+
+### Rule number 13 (Powershell Execution) [T1059.001](https://attack.mitre.org/techniques/T1059/001/)
+
+Severity : Medium
+
+```
+Processes.action=allowed
+Processes.process_path = "C:\\Windows\\*\\powershell.exe"
+Processes.parent_process_path != "C:\\Windows\\explorer.exe"
+
+In last 24 hour
+```
+
+
+### Rule number 21 (Remote PowerShell Sessions) [T1059.001](https://attack.mitre.org/techniques/T1059/001/) T1021
+
+Severity : Medium
+
+```
+Processes.process_exec = "wsmprovhost.exe"
+Processes.parent_process_exec != "svchost.exe"
+
+In last 24 hour
+```
+
+
+### Rule number 65 (Unusually Long Command Line Strings) [T1059.003](https://attack.mitre.org/techniques/T1059/003/), [T1059.001](https://attack.mitre.org/techniques/T1059/001/)
+
+Severity : Low
+
+```
+max(process.length) > 10* average(process.length)
+
+In last 24 hour
+```
+
+### Rule number 19 (Quick execution of a series of suspicious commands) T1087 T1003 T1069 T1057 T1021 T1543 T1112 T1574 T1018 T1569 T1053 T1029 T1033 T1007 T1082 T1049 T1016 T1010 T1518 T1046 T1562 T1098 T1059 T1012
+
+Severity : Medium
+
+```
+Process.process_exec IN (“arp.exe", "at.exe", "attrib.exe", "cscript.exe", "dsquery.exe", "hostname.exe", "ipconfig.exe", "mimikatz.exe", "nbstat.exe", "net.exe", "netsh.exe", "nslookup.exe", "ping.exe", "quser.exe", "qwinsta.exe", "reg.exe", "runas.exe", "sc.exe", "schtasks.exe", "ssh.exe", "systeminfo.exe", "taskkill.exe", "telnet.exe", "tracert.exe", "wscript.exe", "xcopy.exe”) and 
+count(Process.process_exec) > 1
+
+In last 24 hour
+```
+
+
+### Rule number 24 (Processes Spawning cmd.exe) [T1059.003](https://attack.mitre.org/techniques/T1059/003/)
+
+Severity : Medium
+
+```
+Processes.process_exec = "cmd.exe"
+Processes.parent_process_exec == "*"
+
+In Last 24 hour
+```
 
 
