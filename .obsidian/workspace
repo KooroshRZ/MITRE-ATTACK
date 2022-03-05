@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "Techniques-Study/index.md",
-            "mode": "preview"
+            "mode": "source"
           }
         }
       }
@@ -89,13 +89,13 @@
   "active": "99a5b981b7510b87",
   "lastOpenFiles": [
     "Techniques-Study/index.md",
+    "README.md",
     "Untitled.md",
     "Implementation/index.md",
     "Atomic-Red-Team/index.md",
     "Atomic-Red-Team/Untitled.md",
     "Defining_Data_Sources_Part_I/index.md",
     "ATTACK_Design_and_Philosophy_March_2020/index.md",
-    "google.com.md",
-    "README.md"
+    "google.com.md"
   ]
 }
