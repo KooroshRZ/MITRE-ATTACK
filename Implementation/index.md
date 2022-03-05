@@ -142,7 +142,12 @@ In last 24 hour
 Severity : Medium
 
 ```
-Process.process_exec IN (“arp.exe", "at.exe", "attrib.exe", "cscript.exe", "dsquery.exe", "hostname.exe", "ipconfig.exe", "mimikatz.exe", "nbstat.exe", "net.exe", "netsh.exe", "nslookup.exe", "ping.exe", "quser.exe", "qwinsta.exe", "reg.exe", "runas.exe", "sc.exe", "schtasks.exe", "ssh.exe", "systeminfo.exe", "taskkill.exe", "telnet.exe", "tracert.exe", "wscript.exe", "xcopy.exe”) and 
+Process.process_exec IN (“arp.exe", "at.exe", "attrib.exe", "cscript.exe",
+"dsquery.exe", "hostname.exe", "ipconfig.exe", "mimikatz.exe", "nbstat.exe",
+"net.exe", "netsh.exe", "nslookup.exe", "ping.exe", "quser.exe",
+"qwinsta.exe", "reg.exe", "runas.exe", "sc.exe", "schtasks.exe",
+"ssh.exe", "systeminfo.exe", "taskkill.exe", "telnet.exe", "tracert.exe",
+"wscript.exe", "xcopy.exe”)
 count(Process.process_exec) > 1
 
 In last 24 hour
