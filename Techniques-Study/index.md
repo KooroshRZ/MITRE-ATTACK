@@ -34,14 +34,14 @@
 <tbody>
   <tr>
     <td class="tg-0pky">1</td>
-    <td class="tg-0pky" rowspan="2">[Active Scanning](https://attack.mitre.org/techniques/T1595)</td>
-    <td class="tg-0pky">[Scanning IP Blocks](https://attack.mitre.org/techniques/T1595/001)</td>
-    <td class="tg-0pky">single source multiple dests</td>
+    <td class="tg-0pky" rowspan="2"><a href="https://attack.mitre.org/techniques/T1595">Active Scanning</a></td>
+    <td class="tg-0pky"><a href="https://attack.mitre.org/techniques/T1595/001">Scanning IP Blocks</a></td>
+    <td class="tg-0pky">single source, multiple dests</td>
     <td class="tg-0pky"></td>
   </tr>
   <tr>
     <td class="tg-0pky">2</td>
-    <td class="tg-0pky">[Vulnerability Scanning](https://attack.mitre.org/techniques/T1595/002)</td>
+    <td class="tg-0pky"><a href="https://attack.mitre.org/techniques/T1595/002">Vulnerability Scanning</a></td>
     <td class="tg-0pky">malicious user-agents</td>
     <td class="tg-0pky"></td>
   </tr>
