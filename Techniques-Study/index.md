@@ -18,57 +18,57 @@
     <td rowspan="2"><a href="https://attack.mitre.org/techniques/T1595" target="_blank" rel="noopener noreferrer">Active Scanning</a></td>
     <td><a href="https://attack.mitre.org/techniques/T1595/001" target="_blank" rel="noopener noreferrer">Scanning IP Blocks</a></td>
     <td>single source multiple dests</td>
-    <td></td>
+    <td>nmap, netdiscover or other tools</td>
   </tr>
   <tr>
     <td>2</td>
     <td><a href="https://attack.mitre.org/techniques/T1595/002" target="_blank" rel="noopener noreferrer">Vulnerability Scanning</a></td>
     <td>malicious user-agents</td>
-    <td></td>
+    <td>openvas, nessus, nmap, acunetix, ...</td>
   </tr>
   <tr>
     <td>3</td>
     <td rowspan="4"><a href="https://attack.mitre.org/techniques/T1592" target="_blank" rel="noopener noreferrer">Gather Victim Host Information</a></td>
     <td><a href="https://attack.mitre.org/techniques/T1592/001" target="_blank" rel="noopener noreferrer">Hardware</a></td>
     <td>Not possible</td>
-    <td></td>
+    <td>active direct scan or phishing</td>
   </tr>
   <tr>
     <td>4</td>
     <td><a href="https://attack.mitre.org/techniques/T1592/002" target="_blank" rel="noopener noreferrer">Software</a></td>
     <td>Not possible</td>
-    <td></td>
+    <td>active direct scan or phishing</td>
   </tr>
   <tr>
     <td>5</td>
     <td><a href="https://attack.mitre.org/techniques/T1592/003" target="_blank" rel="noopener noreferrer">Firmware</a></td>
     <td>Not possible</td>
-    <td></td>
+    <td>active direct scan or phishing</td>
   </tr>
   <tr>
     <td>6</td>
     <td><a href="https://attack.mitre.org/techniques/T1592/004" target="_blank" rel="noopener noreferrer">Client Configurations</a></td>
     <td>Not possible</td>
-    <td></td>
+    <td>active direct scan or phishing</td>
   </tr>
   <tr>
     <td>7</td>
     <td rowspan="3"><a href="https://attack.mitre.org/techniques/T1589" target="_blank" rel="noopener noreferrer">Gather Victim Identity Information</a></td>
     <td><a href="https://attack.mitre.org/techniques/T1589/001" target="_blank" rel="noopener noreferrer">Credentials</a></td>
     <td>Not possible</td>
-    <td></td>
+    <td>Leaked DBs, phishing, compromise sites, keyloggers, ...</td>
   </tr>
   <tr>
     <td>8</td>
     <td><a href="https://attack.mitre.org/techniques/T1589/002" target="_blank" rel="noopener noreferrer">Email Addresses</a></td>
     <td>Not Possible</td>
-    <td></td>
+    <td>OSINT, Leaked DBs, Social Medias</td>
   </tr>
   <tr>
     <td>9</td>
     <td><a href="https://attack.mitre.org/techniques/T1589/003" target="_blank" rel="noopener noreferrer">Employee Names</a></td>
     <td>Not Possible</td>
-    <td></td>
+    <td>OSINT, Leaked DBs, Social Medias</td>
   </tr>
   <tr>
     <td>10</td>

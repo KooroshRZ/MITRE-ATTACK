@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Techniques-Study/index.md",
+            "file": "README.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Techniques-Study/index.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,8 +88,8 @@
   },
   "active": "99a5b981b7510b87",
   "lastOpenFiles": [
-    "Techniques-Study/index.md",
     "README.md",
+    "Techniques-Study/index.md",
     "Untitled.md",
     "Implementation/index.md",
     "Atomic-Red-Team/index.md",
