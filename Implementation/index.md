@@ -166,3 +166,99 @@ In Last 24 hour
 ```
 
 
+# Map to Event Viewer (Most used)
+## 1 - Command and Scripting Interpreter [T1059](https://attack.mitre.org/techniques/T1059/) (24%)
+### PowerShell [T1059.001](https://attack.mitre.org/techniques/T1059/001/)
+|attack scenario|Windows Event ID|Threat name / Tool / CVE|details|
+|:-|:-|:-|:-|
+|Encoded PowerShell payload deployed|800/4103/4104|-|-|
+|Interactive PipeShell over SMB named pipe|800/4103/4104|-|-|
+|Payload downloaded via PowerShell|800/4103/4104|-|-|
+
+### Windows Cmd [T1059.003](https://attack.mitre.org/techniques/T1059/003/)
+|attack scenario|Windows Event ID|Threat name / Tool / CVE|details|
+|:-|:-|:-|:-|
+|Encoded PowerShell payload deployed via process execution|4688|-|-|
+|SQL Server payload injectection for reverse shell (MSF)|4688|-|-|
+
+## 2 - Signed Binary Proxy Execution [T1218](https://attack.mitre.org/techniques/T1218) (19%)
++ No way to detect with event viewer
+### Rundll32 [T1218.011](https://attack.mitre.org/techniques/T1218/011/)
+
+### Mshta [T1218.005](https://attack.mitre.org/techniques/T1218/005/)
+
+<br><br>
+
+## 3 - Create or Modify System Process [T1543](https://attack.mitre.org/techniques/T1543/) (16%)
+### Windows Service [T1543.003](https://attack.mitre.org/techniques/T1543/003/)
+|attack scenario|Windows Event ID|Threat name / Tool / CVE|details|
+|:-|:-|:-|:-|
+|Encoded PowerShell payload deployed via service installation|7045/4697|-|-|
+|Impacket SMBexec service registration (native)|7045/4697|SMBexec|-|
+|Mimikatz service driver installation detected|7045/4697|Mimikatz|-|
+|Service abuse with backdoored "command failure" (PowerShell)|800/4103/4104|-|-|
+|Service abuse with backdoored "command failure" (registry)|4688/1|-|-|
+|Service abuse with backdoored "command failure" (service)|4688/1|-|-|
+|Service abuse with malicious ImagePath (PowerShell)|800/4103/4104|-|-|
+|Service abuse with malicious ImagePath (registry)|4688/1|-|-|
+|Service abuse with malicious ImagePath (service)|4688/1|-|-|
+|Service created for RDP session hijack|7045/4697|-|-|
+|Service creation (command)|4688|-|-|
+|Service creation (PowerShell)|800/4103/4104|-|-|
+
+
+## 4 - Scheduled Task/Job [T1053](https://attack.mitre.org/techniques/T1053/) (16%)
+### Scheduled Task [T1053.005](https://attack.mitre.org/techniques/T1053/005/)
+
+|attack scenario|Windows Event ID|Threat name / Tool / CVE|details|
+|:-|:-|:-|:-|
+|Interactive shell triggered by scheduled task (at, deprecated)|4688|-|-|
+|Persistent scheduled task with SYSTEM privileges creation|4688|-|-|
+|Remote schedule task creation via named pipes|5145|Atexec|-|
+|Schedule task created and deleted in a short period of time|4698-4699|-|-|
+|Schedule task created with suspicious arguments|4698|Atexec|-|
+|Schedule task fastly created and deleted|4698,4699|Atexec|-|
+|Scheduled task creation|4688|-|-|
+
+
+## 5 - OS Credential Dumping [T1003](https://attack.mitre.org/techniques/T1003/) (7%)
+### LSASS Memory [T1003.001](https://attack.mitre.org/techniques/T1003/001/)
+|attack scenario|Windows Event ID|Threat name / Tool / CVE|details|
+|:-|:-|:-|:-|
+|LSASS credential dump with LSASSY (kernel)|4656/4663|-|-|
+|LSASS credential dump with LSASSY (PowerShell)|800/4103/4104|-|-|
+|LSASS credential dump with LSASSY (process)|4688/1|-|-|
+|LSASS credential dump with LSASSY (share)|5145|-|-|
+|LSASS credentials dump via Task Manager (file)|11|-|-|
+|LSASS dump indicator via Task Manager access|4688|-|-|
+|LSASS process accessed by a non system account|4656/4663|-|-|
+|SAM database user credential dump|4661|Mimikatz|-|
+
+
+## 6 - Process Injection [T1055](https://attack.mitre.org/techniques/T1055/) (7%)
++ No way to detect with Windows Event Viewer
+
+
+
+## 7 - Obfuscated Files or Information [T1027](https://attack.mitre.org/techniques/T1027/) (6%)
+|attack scenario|Windows Event ID|Threat name / Tool / CVE|details|
+|:-|:-|:-|:-|
+|Payload obfuscated transfer via service name|4688|Tchopper|-|
+
+
+## 8 - Ingress Tool Transfer [T1105](https://attack.mitre.org/techniques/T1105/) (5%)
++ No way to detect with Windows Event Viewer
+
+## 9 - System Services [T1569](https://attack.mitre.org/techniques/T1569/) (4%)
+### Service Execution [T1569.002](https://attack.mitre.org/techniques/T1569/002/)
+|attack scenario|Windows Event ID|Threat name / Tool / CVE|details|
+|:-|:-|:-|:-|
+|PSexec installation detected|4688|-|-|
+|Service massive failures (native)|7000/7009|Tchopper|-|
+|Service massive installation (native)|7045/4697|Tchopper|-|
+|Service massive remote creation via named pipes (native)|5145|Tchopper|-|
+
+
+## 10 - Masquerading [T1036](https://attack.mitre.org/techniques/T1036/) (4%)
+### Rename System Utilities [T1036.003](https://attack.mitre.org/techniques/T1036/003/)
++ No way to detect with Windows Event Viewer

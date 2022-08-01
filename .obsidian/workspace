@@ -9,8 +9,9 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "README.md",
-            "mode": "source"
+            "file": "Statistics/index.md",
+            "mode": "source",
+            "source": true
           }
         }
       }
@@ -47,6 +48,14 @@
                 "sortOrder": "alphabetical"
               }
             }
+          },
+          {
+            "id": "1137abc54077ac85",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
           }
         ]
       }
@@ -68,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Statistics/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -76,6 +85,39 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d6923a7f2788a56f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Statistics/index.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "db6f08616c47f1a2",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "5485942cf21fd495",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Statistics/index.md"
               }
             }
           }
@@ -88,10 +130,10 @@
   },
   "active": "99a5b981b7510b87",
   "lastOpenFiles": [
+    "Implementation/index.md",
     "README.md",
     "Techniques-Study/index.md",
     "Untitled.md",
-    "Implementation/index.md",
     "Atomic-Red-Team/index.md",
     "Atomic-Red-Team/Untitled.md",
     "Defining_Data_Sources_Part_I/index.md",

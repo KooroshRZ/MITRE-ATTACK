@@ -19,7 +19,7 @@
 8. Ingress Tool Transfer [T1105](https://attack.mitre.org/techniques/T1105/)
 9. System Services [T1569](https://attack.mitre.org/techniques/T1569/)
 	1. Service Execution [T1569.002](https://attack.mitre.org/techniques/T1569/002/)
-10. Masquerading [T1569](https://attack.mitre.org/techniques/T1569/)
+10. Masquerading [T1036](https://attack.mitre.org/techniques/T1036/)
 	1. Rename System Utilities [T1036.003](https://attack.mitre.org/techniques/T1036/003/)
 
 <br><br>
