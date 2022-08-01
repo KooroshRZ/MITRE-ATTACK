@@ -169,17 +169,21 @@ In Last 24 hour
 # Map to Event Viewer (Most used)
 ## 1 - Command and Scripting Interpreter [T1059](https://attack.mitre.org/techniques/T1059/) (24%)
 ### PowerShell [T1059.001](https://attack.mitre.org/techniques/T1059/001/)
+
 |attack scenario|Windows Event ID|Threat name / Tool / CVE|details|
 |:-|:-|:-|:-|
 |Encoded PowerShell payload deployed|800/4103/4104|-|-|
 |Interactive PipeShell over SMB named pipe|800/4103/4104|-|-|
 |Payload downloaded via PowerShell|800/4103/4104|-|-|
 
+
 ### Windows Cmd [T1059.003](https://attack.mitre.org/techniques/T1059/003/)
+
 |attack scenario|Windows Event ID|Threat name / Tool / CVE|details|
 |:-|:-|:-|:-|
 |Encoded PowerShell payload deployed via process execution|4688|-|-|
 |SQL Server payload injectection for reverse shell (MSF)|4688|-|-|
+
 
 ## 2 - Signed Binary Proxy Execution [T1218](https://attack.mitre.org/techniques/T1218) (19%)
 + No way to detect with event viewer
@@ -187,10 +191,9 @@ In Last 24 hour
 
 ### Mshta [T1218.005](https://attack.mitre.org/techniques/T1218/005/)
 
-<br><br>
-
 ## 3 - Create or Modify System Process [T1543](https://attack.mitre.org/techniques/T1543/) (16%)
 ### Windows Service [T1543.003](https://attack.mitre.org/techniques/T1543/003/)
+
 |attack scenario|Windows Event ID|Threat name / Tool / CVE|details|
 |:-|:-|:-|:-|
 |Encoded PowerShell payload deployed via service installation|7045/4697|-|-|
@@ -207,6 +210,7 @@ In Last 24 hour
 |Service creation (PowerShell)|800/4103/4104|-|-|
 
 
+
 ## 4 - Scheduled Task/Job [T1053](https://attack.mitre.org/techniques/T1053/) (16%)
 ### Scheduled Task [T1053.005](https://attack.mitre.org/techniques/T1053/005/)
 
@@ -221,8 +225,10 @@ In Last 24 hour
 |Scheduled task creation|4688|-|-|
 
 
+
 ## 5 - OS Credential Dumping [T1003](https://attack.mitre.org/techniques/T1003/) (7%)
 ### LSASS Memory [T1003.001](https://attack.mitre.org/techniques/T1003/001/)
+
 |attack scenario|Windows Event ID|Threat name / Tool / CVE|details|
 |:-|:-|:-|:-|
 |LSASS credential dump with LSASSY (kernel)|4656/4663|-|-|
@@ -233,6 +239,7 @@ In Last 24 hour
 |LSASS dump indicator via Task Manager access|4688|-|-|
 |LSASS process accessed by a non system account|4656/4663|-|-|
 |SAM database user credential dump|4661|Mimikatz|-|
+
 
 
 ## 6 - Process Injection [T1055](https://attack.mitre.org/techniques/T1055/) (7%)
@@ -251,12 +258,14 @@ In Last 24 hour
 
 ## 9 - System Services [T1569](https://attack.mitre.org/techniques/T1569/) (4%)
 ### Service Execution [T1569.002](https://attack.mitre.org/techniques/T1569/002/)
+
 |attack scenario|Windows Event ID|Threat name / Tool / CVE|details|
 |:-|:-|:-|:-|
 |PSexec installation detected|4688|-|-|
 |Service massive failures (native)|7000/7009|Tchopper|-|
 |Service massive installation (native)|7045/4697|Tchopper|-|
 |Service massive remote creation via named pipes (native)|5145|Tchopper|-|
+
 
 
 ## 10 - Masquerading [T1036](https://attack.mitre.org/techniques/T1036/) (4%)

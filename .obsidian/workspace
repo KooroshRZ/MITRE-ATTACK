@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Statistics/index.md",
+            "file": "Implementation/index.md",
             "mode": "source",
             "source": true
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Statistics/index.md",
+                "file": "Implementation/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Statistics/index.md",
+                "file": "Implementation/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Statistics/index.md"
+                "file": "Implementation/index.md"
               }
             }
           }
@@ -130,8 +130,9 @@
   },
   "active": "99a5b981b7510b87",
   "lastOpenFiles": [
-    "Implementation/index.md",
     "README.md",
+    "Statistics/index.md",
+    "Implementation/index.md",
     "Techniques-Study/index.md",
     "Untitled.md",
     "Atomic-Red-Team/index.md",
